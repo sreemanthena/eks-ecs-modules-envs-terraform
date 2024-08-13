@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'feature/eks-setup', credentialsId: 'GitHub_Personal access token', url: 'https://github.com/org/devops-terraform.git'
+                git branch: 'feature/eks-ecs-module-envs', url: 'https://github.com/sreemanthena/eks-ecs-modules-envs-terraform.git'
+                //git branch: 'feature/eks-setup', credentialsId: 'GitHub_Personal access token', url: 'https://github.com/org/devops-terraform.git'
             }
         }
 
