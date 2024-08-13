@@ -1,0 +1,12 @@
+cluster_name       = "test-eks-cluster"
+region             = "us-east-1"
+vpc_id             = "vpc-0abb4abf1e7aeb0b6"
+subnet_ids         = ["subnet-0ff2d594ccbc047fe", "subnet-01d6792b9e1a941f9"]
+security_group_ids = ["sg-0c92bd9b050dc05bf"]
+instance_type      = "t3.medium"
+desired_capacity   = 2
+min_size           = 1
+max_size           = 4
+cluster_version    = "1.29"
+ec2_ssh_key        = "jenkins-nonprod"
+node_group_name    = "test-eks-node-group"
