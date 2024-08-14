@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "sree-ecs-tfstate"
-    key    = "ecs/env/${terraform.workspace}/terraform.tfstate"
+    bucket = "sree-terraform"
+    key    = "dev-eks/terraform.tfstate"
     region = "us-east-1" 
   }
 }
