@@ -31,7 +31,7 @@ module "eks" {
 
 ######Below is the code for ECS reference###
 variable "ecs_cluster_name" {}
-variable "region" {}
+#variable "region" {}
 variable "task_family" {}
 variable "task_cpu" {}
 variable "task_memory" {}
@@ -41,9 +41,9 @@ variable "container_image" {}
 variable "container_port" {}
 variable "service_name" {}
 variable "service_desired_count" {}
-variable "vpc_id" {}
-variable "subnet_ids" {}
-variable "security_group_ids" {}
+#variable "vpc_id" {}
+#variable "subnet_ids" {}
+#variable "security_group_ids" {}
 module "ecs" {
   source        = "../../modules/ecs_fargate"
 
